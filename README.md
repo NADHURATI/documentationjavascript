@@ -133,4 +133,43 @@ console.log(resultat); // Affiche 8
 
 Avec ces bases, vous pouvez déjà commencer à programmer en JavaScript. Pratiquez en réalisant des petits projets comme une calculatrice ou un compteur de clics sur une page web !
 
+let jour = "mardi"; // valeur
+// les instructions
+switch (jour) {
+    case "lundi":
+        console.log("c'est le début de la semaine !");
+        break; // arrête l'exécution du switch après ce cas
+    case "mardi":
+        console.log("C'est mardi, encore du boulot !");
+        break;
+    case "samedi":
+        break;
+    case "dimanche":
+        console.log("C'est le week-end !");
+        break;
+    default: // Si 'jour' ne correspond à aucun des cas précédents, on exécute par défaut
+        console.log("Jour inconnu");                
+}
+```
+
+```
+
+Fonction avec retour de valeur :
+
+function addition(a,b) {
+    return a + b;
+}
+// fonction anonyme 
+const add = function(a,b) {
+  return a + b;
+}
+// fonction fléché
+const add = (a, b) => {
+  return a + b;
+}
+// exemple
+const add = (a, b) => a + b;
+// appel de la fonction
+let resultat = add(2,2);
+
 ```
