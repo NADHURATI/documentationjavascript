@@ -290,7 +290,7 @@ let gla = new Personnage("gladius", 120, 50);
 console.log(gla.sante); // 120
 ```
 
-Les class (Exercice du jour)
+Les class (Exercice)
 ```
 class Voiture {
     constructor(vitesse,marque) {
@@ -315,7 +315,7 @@ bmw.freiner(50);
 console.log(bmw.vitesse);
 ```
 
-FUNCTION FLECHE
+FUNCTION FLECHE (Revision)
 ```
 function verification (age) {
     if (age >= 22) {
@@ -329,6 +329,7 @@ const resultat = verification(30);
 console.log(verification);
 ```
 
+Les listes (REVISION)
 ```
 let nom;
 /*console.log(nom);*/
@@ -538,7 +539,7 @@ button {
 }
 ```
 
-SERVER
+Revision sur le SERVER
 ```
 const express = require("express");
 const app = express();
@@ -554,8 +555,7 @@ app.listen(PORT, () => {
 });
 ```
 
-DOSSIER CLASS
-
+Les CLASS (Exercice)
 ```
 class Personnage {
     constructor(nom,sante,force) {
