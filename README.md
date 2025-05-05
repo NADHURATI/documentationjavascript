@@ -581,6 +581,29 @@ let boubou1 = {
 };
 ```
 
+Les Fetch
+```
+class APIhttp {
+    async getHttp() {
+        try {
+            const response = await fetch("https://www.google.fr");
+            if (response.ok) {
+                return response;
+            }
+            return "sans réponse";
+        } catch (error) {
+            return error;
+        }
+    }
+}
+
+let requete = new APIhttp();
+const data = await requete.getHttp();
+console.log(data);
+```
+
+
+
 
 
 
