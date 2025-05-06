@@ -601,6 +601,25 @@ let requete = new APIhttp();
 const data = await requete.getHttp();
 console.log(data);
 ```
+Les Class
+```
+class Voiture {
+    constructor(marque, puissance) {
+        this.marque = marque;
+        this.puissance = puissance;
+    }
+    augmenter(valeur) {
+        this.puissance += valeur;
+    }
+    augmenter(valeur) {
+        this.puissance -= valeur;
+    }
+}
+
+let audi = new Voiture("audi", 50);
+audi.augmenter(100);
+console.log(audi.puissance);
+```
 
 
 
