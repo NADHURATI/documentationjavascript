@@ -581,7 +581,7 @@ let boubou1 = {
 };
 ```
 
-Les Fetch
+Les Fetch avec les HTTP
 ```
 class APIhttp {
     async getHttp() {
@@ -601,7 +601,8 @@ let requete = new APIhttp();
 const data = await requete.getHttp();
 console.log(data);
 ```
-Les Class
+
+Les Class avec La Voiture
 ```
 class Voiture {
     constructor(marque, puissance) {
@@ -619,6 +620,23 @@ class Voiture {
 let audi = new Voiture("audi", 50);
 audi.augmenter(100);
 console.log(audi.puissance);
+```
+
+Les Fonction avec les retour des valeurs avec les Marque de Voitures
+```
+let marqueVoiture = ["mercedes", "bmw", "audi"];
+
+function trouverMarque(marques) {
+    for (let i = 0; i < marques.length; i++) {
+        if (marques[i] === "bmw") {
+            console.log(marques[i]);
+            break;
+        }
+       
+    }
+}
+
+let valeurRecuperer = trouverMarque(marqueVoiture);
 ```
 
 
