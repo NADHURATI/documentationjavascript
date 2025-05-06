@@ -624,19 +624,27 @@ console.log(audi.puissance);
 
 Les Fonction avec les retour des valeurs avec les Marque de Voitures
 ```
+// Déclaration d'un tableau contenant des marques de voitures
 let marqueVoiture = ["mercedes", "bmw", "audi"];
 
+// Définition d'une fonction qui cherche une marque spécifique dans le tableau
 function trouverMarque(marques) {
-    for (let i = 0; i < marques.length; i++) {
-        if (marques[i] === "bmw") {
-            console.log(marques[i]);
-            break;
-        }
-       
+  // Boucle qui parcourt chaque élément du tableau
+  for (let i = 0; i < marques.length; i++) {
+    // Si la marque courante est "bmw"
+    if (marques[i] === "bmw") {
+      // Affiche "bmw" dans la console
+      console.log(marques[i]);
+      // Interrompt la boucle immédiatement après avoir trouvé "bmw"
+      break;
     }
+  }
 }
 
+// Appel de la fonction avec le tableau de marques
+// La variable 'valeurRecuperer' vaudra 'undefined' car la fonction ne retourne rien
 let valeurRecuperer = trouverMarque(marqueVoiture);
+
 ```
 
 
