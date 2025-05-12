@@ -689,6 +689,36 @@ Exercice
 </html>
 ```
 
+Requête HTTP
+```
+const axios = require("axios");
+
+const connexion = {
+    name: "anonyme",
+    first_name: "anonyme",
+    password: "n03dh10ra",
+    status_agent: "all",
+    assigned_digital_space: "Mangajou",
+    email: "nadhuratiali47@gmail.com"
+  };
+  
+  axios.post("https://backend-taarafa.onrender.com/log/signup-agent", connexion)
+    .then(response => {
+      console.log('✅ Inscription réussie !');
+      console.log('Code de statut :', response.status); // Doit être 201
+      console.log('Réponse :', response.data);
+    })
+    .catch(error => {
+      if (error.response) {
+        console.log('❌ Erreur lors de la requête');
+        console.log('Code de statut :', error.response.status);
+        console.log('Message :', error.response.data);
+      } else {
+        console.error('Erreur réseau ou autre :', error.message);
+      }
+    });
+  ```
+
 
 
 
