@@ -647,6 +647,48 @@ let valeurRecuperer = trouverMarque(marqueVoiture);
 
 ```
 
+Exercice
+```
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icônes avec Style</title>
+
+    <!-- Lien Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Ton CSS externe -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+    
+    <div class="logo">
+        <p><i class="fas fa-at icon"></i></p>
+    </div> 
+
+    <div class="Menu">
+
+        <div class="menu-item"><i class="fas fa-copy icon"></i> Menu item 1</div>
+        <div class="menu-item"><i class="fas fa-calendar-alt icon"></i> Menu item 2</div>
+        <div class="menu-item"><i class="fas fa-user icon"></i> Menu item 3</div>
+        <div class="menu-item"><i class="fas fa-paperclip icon"></i> Menu item 4</div>
+
+    </div>
+
+    <div class="box">
+        <h1><i class="fas fa-copyright title-icon"></i> Bacar Darwin</h1>
+    </div>
+
+    </div>
+</body>
+</html>
+```
+
 
 
 
