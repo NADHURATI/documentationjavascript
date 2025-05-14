@@ -89,6 +89,13 @@ Les boucles permettent d'exécuter un bloc de code plusieurs fois.
 for (let i = 0; i < 5; i++) {
     console.log("Tour n°" + i);
 }
+
+Boucle for retourne en arrière
+
+for (let i = 1000; i >= 0; i--) {
+    console.log("Tour n°" + i);
+}
+
 ```
 
 ### Boucle `while` :
