@@ -726,6 +726,52 @@ const connexion = {
     });
   ```
 
+Formulaire de Connexion
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="Connexion">
+        <h1> Connexion </h1>
+
+        <label> Email :</label>
+        <input type="text" name="email" id="email" /> <br> <br>
+        <label> Mot de passe :</label>
+        <input type="text" name="Mot De Passe" id="motDePasse" /> <br> <br>
+
+        <button id="valider"> Valider </button>
+
+    <div id="result"></div>
+
+    <script>
+
+        document.getElementById('valider').addEventListener('click', function () {
+            console.log("Cliqué");
+            const email = document.getElementById("email").value;
+            const motDePasse = document.getElementById("motDePasse").value;
+            const result = document.getElementById("result");
+
+            if (email === '' || motDePasse === '') {
+                result.innerHTML = '<p class="error"> Veuillez remplir les champs </p>';
+            return;
+            }
+
+            console.log(email, motDePasse);
+            document.getElementById('resultat').textContent = {email}, {motDePasse};
+        });
+
+    </script>
+</body>
+</html>
+```
+
 
 
 
